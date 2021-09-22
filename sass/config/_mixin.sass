@@ -1,0 +1,23 @@
+=font-face($directory, $file, $weight, $style)
+    @font-face
+        font-family: $directory
+        src: url("../fonts/#{$directory}/#{$file}.woff1") format('woff1')
+        src: url("../fonts/#{$directory}/#{$file}.woff2") format('woff2')
+        font-weight: $weight
+        font-style: $style
+
+=mobile
+    @media (min-width: $mobile)
+        @content
+
+=tablet
+    @media (min-width: $tablet)
+        @content
+
+=laptop
+    @media (min-width: $laptop)
+        @content
+
+=large
+    @media (min-width: $large)
+        @content
